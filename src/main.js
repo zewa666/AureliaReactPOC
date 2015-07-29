@@ -1,7 +1,7 @@
 export function configure(aurelia) {
   aurelia.use
-    .standardConfiguration()
-    .developmentLogging();
+  .standardConfiguration()
+  .developmentLogging();
 
   aurelia.start().then(a => a.setRoot());
 }

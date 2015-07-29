@@ -1,4 +1,1 @@
-export class App {
-  configureRouter(config, router){
-  }
-}
+export class App {}
