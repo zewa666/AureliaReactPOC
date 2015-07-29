@@ -17,7 +17,6 @@ System.config({
 
 System.config({
   "map": {
-    "aurelia-animator-css": "github:aurelia/animator-css@0.13.0",
     "aurelia-binding": "github:aurelia/binding@0.8.2",
     "aurelia-bootstrapper": "github:aurelia/bootstrapper@0.14.0",
     "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.9.0",
@@ -41,13 +40,8 @@ System.config({
     "babel": "npm:babel-core@5.8.3",
     "babel-runtime": "npm:babel-runtime@5.8.3",
     "core-js": "npm:core-js@0.9.18",
-    "css": "github:systemjs/plugin-css@0.1.13",
-    "fetch": "github:github/fetch@0.9.0",
     "react": "npm:react@0.14.0-beta1",
     "react-dom": "npm:react-dom@0.14.0-beta1",
-    "github:aurelia/animator-css@0.13.0": {
-      "aurelia-templating": "github:aurelia/templating@0.13.11"
-    },
     "github:aurelia/binding@0.8.2": {
       "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.9.0",
       "aurelia-metadata": "github:aurelia/metadata@0.7.0",
@@ -261,3 +255,4 @@ System.config({
     }
   }
 });
+
