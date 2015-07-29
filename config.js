@@ -40,11 +40,9 @@ System.config({
     "aurelia-templating-router": "github:aurelia/templating-router@0.14.0",
     "babel": "npm:babel-core@5.8.3",
     "babel-runtime": "npm:babel-runtime@5.8.3",
-    "bootstrap": "github:twbs/bootstrap@3.3.5",
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.13",
     "fetch": "github:github/fetch@0.9.0",
-    "font-awesome": "npm:font-awesome@4.3.0",
     "react": "npm:react@0.14.0-beta1",
     "react-dom": "npm:react-dom@0.14.0-beta1",
     "github:aurelia/animator-css@0.13.0": {
@@ -263,4 +261,3 @@ System.config({
     }
   }
 });
-
