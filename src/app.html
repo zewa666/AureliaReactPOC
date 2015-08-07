@@ -1,4 +1,6 @@
 <template>
-  <require from='./hello'></require>  
-  <div><hello/></div>
+  <require from='./hello'></require>
+
+  <input value.bind="helloVar" />
+  <div><hello foo.bind="helloVar"/></div>
 </template>

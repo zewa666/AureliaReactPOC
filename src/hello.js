@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import {inject, noView} from 'aurelia-framework';
+import {inject, noView, bindable} from 'aurelia-framework';
 
 var HelloTest = React.createClass({
 	render: function () {
-		return (<h1>Hello React{this.props.foo}</h1>);
+		return (<h1>Hello React {this.props.foo}</h1>);
 	}
 });
 
@@ -13,12 +13,21 @@ var HelloTest = React.createClass({
 @inject(Element)
 export class Hello {
 
+  @bindable foo = "!";
+
 	constructor(element) {
 		this.element = element;
-		this.foo = '!';
 	}
 
+  render() {
+    ReactDom.render(<HelloTest foo={this.foo} />, this.element);
+  }
+
 	bind() {
-		ReactDom.render(<HelloTest foo={this.foo} />, this.element);
+		this.render();
 	}
+
+  fooChanged() {
+    this.render();
+  }
 }
